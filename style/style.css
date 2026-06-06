@@ -1,0 +1,693 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+.html {
+    scroll-behavior: smooth;
+    display: block;
+}
+::selection {
+  background-color: #01886486;
+
+}
+.body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+.submenu h3:hover {
+ color: #018864;
+}
+.parallax {
+    width: 100%;
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+    url('../asset/ainava.JPG');
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .menu {
+      width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+      color: white;
+      padding: 25px;
+      padding-left: 30px;
+      padding-right: 40px;
+      z-index: 4;
+  }
+  .submenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .langmenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 25px;
+  }
+  .menu h3 {
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: medium;
+    font-weight: 300;
+    padding-left: 25px;
+  }
+  .logo {
+      width: 180px;
+      padding-left: 10px;
+  }
+  .menu h3:active {
+    color: green;
+  }
+  .active {
+      color: #018864;
+  }
+  .banner {
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    
+  }
+  .banner h1 {
+    line-height: 1.1;
+    font-size: 115px;
+    font-weight: 100;
+    z-index: 0;
+    margin-bottom: 50px;
+  }
+  .banner h3 {
+    padding-top: 45px;
+    font-size: 30px;
+    font-weight: 300;
+    z-index: 2;
+  }
+  .but {
+    display: flex;
+    justify-content: center;
+    padding: 14px;
+    padding-left: 35px;
+    padding-right: 35px;
+    margin-top: 55px;
+    background-color: #018864;
+    font-weight: 300;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+      font-size: 18px;
+      z-index: 2;
+  }
+  .conttwo {
+    width: 100%;
+    height: 800px;
+    background-color: #1a1a1b;
+    background-image: url('../asset/logo_vector_black.svg');
+    background-repeat: no-repeat;
+    background-size: 45%;
+    background-position: -5%;
+  }
+
+  /* slide */
+  .conttwo {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  .slider {
+    width: 100%;
+    padding: 20px;
+  }
+  .swiper-container {
+      width: 100%;
+      display: flex !important;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+  }
+  .swiper-wrapper {
+      width: 90%  !important;
+      display: flex;
+      margin-left: -10%;
+      cursor: default !important;
+  }
+  .swiper-pagination-bullet-active {
+      color: white   !important;
+  }
+              .swiper-slide  {
+                  display: flex !important;
+                  justify-content: center;
+                  align-items: center;
+              }
+   .swiper-pagination, .swiper-button-next, .swiper-button-prev {
+       position: unset !important;
+   }
+   .swiper-button-next, .swiper-button-prev {
+       color: white   !important;
+   }
+  .card  {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      text-align: left;
+      justify-content: center;
+      align-items: center;
+      padding-top: 25px;
+      transition: 600ms;
+  }
+  .cardinside {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      text-align: left;
+      justify-content: center;
+      padding: 20px;
+  }
+  .cardinside h1 {
+    font-family: 'Roboto', sans-serif;
+      font-weight: 700;
+      font-size: 50px;
+      color: white;
+      margin-bottom: 30px;
+  }
+  .cardinside img {
+      vertical-align: middle;
+      margin-left: 5px;
+  }
+  .swiper-pagination {
+      padding-top: 0px;
+  }
+  .swiper-slide-prev, .swiper-slide-next {
+      transition: opacity 2s !important;
+      opacity: 0 !important;
+  }
+  .revph {
+      width: 300px;
+      height: 300px;
+      border-radius: 49%;
+  
+  }
+  .cardinside .but {
+    width: 210px;
+  }
+  .card p {
+      max-width: 600px;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 400;
+      font-size: 20px;
+      color: white;
+      opacity: 80%;
+  }
+  .card h2 {
+    width: 600px;
+      padding: 10px;
+      opacity: 95%;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 700;
+      color: white;
+  }
+  .card span {
+    margin: 5px;
+  }
+  .shapetwo {
+   animation: morph2 8s ease-in-out infinite;
+   border-radius: 40% 30% 60% 70%;
+   height: 300px;
+   transition: all 8s ease-in-out;
+   width: 300px;
+   display: flex;
+   overflow: hidden;
+   box-shadow: 2px 2px 75px 0px rgba(255,255,255,0.5);
+  -webkit-box-shadow: 2px 2px 75px 0px rgba(255,255,255,0.5);
+  -moz-box-shadow: 2px 2px 75px 0px rgba(255,255,255,0.5);
+  }
+  .revone {
+      background-image: url("../asset/image4.jpg");
+  }
+  .revtwo {
+      background-image: url("../asset/IMG_4821.JPG");
+      background-size: 300px;
+  }
+  .revthree {
+      background-image: url("../asset/IMG_1590.jpg");
+      background-size: 300px;
+  }
+  @keyframes morph2 {
+   0% {
+             border-radius:   40% 60% 70% 40% / 50% 60% 40% 60%;
+     }
+  
+     50% {
+             border-radius:  60% 40% 40% 70% / 60% 40% 70% 40%;
+     }
+  
+     100% {
+      border-radius:   40% 60% 70% 40% / 50% 60% 40% 60%;
+     }
+  }
+  /* */
+  .cityname {
+    font-family: 'Roboto', sans-serif;
+      font-size: 18px;
+      margin-right: 15px;
+      padding: 6px;
+      padding-left: 13px;
+      padding-right: 13px;
+      border-radius: 2px;
+      background-color: #018864;
+      transition: 300ms;
+  }
+  /* */
+  .fa-at {
+      padding-right: 3px;
+  }
+  .card h2 {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      text-align: left;
+      justify-content: flex-start;
+      align-items: center;
+  
+  }
+  .photo {
+    width: 550px;
+    margin-right: 50px;
+    border-radius: 0px;
+  }
+  .fa-at:hover, .fa-map-marker:hover {
+      color: white;
+       transform: scale(1.0);
+  }
+  .fa:hover {
+       transform: scale(1.0);
+  }
+  /* slider end */
+  .contthree {
+    width: 100%;
+    height: 60%;
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../asset/DJI_0620.JPG');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+  }
+  .contthree:hover {
+    height: 80%;
+    animation: normal;
+  }
+  .contthree h1 {
+    font-size: 50px;
+  }
+  .contthree p {
+    font-size: 20px;
+    padding-top: 20px;
+  }
+
+  .contfour {
+    width: 100%;
+    height: 60%;
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../asset/sauna-24896342.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+  }
+  .contfour:hover {
+    height: 80%;
+    animation: normal;
+  }
+  .contfour h1 {
+    font-size: 50px;
+  }
+  .contfour p {
+    font-size: 20px;
+    width: 600px;
+    text-align: center;
+    padding-top: 20px;
+  }
+  .fourbut {
+    display: flex;
+    flex-direction: row !important;
+    padding-top: 20px;
+  }
+  .fourbut .but {
+    width: 200px;
+    margin: 10px;
+  }
+  .fourinner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7),  rgba(0, 0, 0, 0.8));
+    z-index: 100
+  }
+  
+
+  .contfive {
+    width: 100%;
+    max-height: 800px;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    color: #393B38;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .contfive h1 {
+    font-size: 50px;
+    font-weight: 900;
+   padding-bottom: 20px ;
+  }
+  .contfive p {
+    margin-top: 40px;
+    font-size: 20px;
+  }
+  .contfive div {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .kontakti {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: center;
+  }
+  .kontakti h3 {
+    color:#018864;
+    margin: 10px;
+  }
+  .kontakti i {
+    font-size: 30px;
+    margin: 15px;
+  }
+  .footer {
+    width: 100%;
+    height: 80px;
+    background-color: #018864;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  a { color: inherit; } 
+ 
+  @media only screen and (max-width: 1300px)  {
+    .photo {
+      margin: inherit;
+      width: 40% !important;
+    }
+    .banner h1 {
+      font-size: 500%;
+    }
+    .contfive {
+      flex-direction: column;
+      max-height: 1500px !important;
+     }
+     .contfive iframe {
+      max-width: 500px !important; 
+     }
+     .contfive div {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+     }
+     .contfive h1 {
+      font-size: 35px;;
+     }
+     .but {
+      width: 160px !important;
+          font-size: 15px;
+          padding: inherit;
+          padding: 16px;
+     }
+     .kontakti {
+      flex-direction: column !important;
+     }
+     #socials {
+      flex-direction: row !important;
+     }
+     .cardinside {
+      text-align: center;
+      align-items: center;
+    }
+    .cardinside h1 {
+      font-size: 45px;;
+      max-width: 305px;
+      
+    }
+    .cardinside p {
+      font-size: 16px;
+    }
+    .cardinside h2 {
+      width: 505px;
+      display: flex;
+      justify-content: center;
+    }
+    .cardinside h1 {
+      margin-top: 20px;
+    }
+    .cityname {
+      font-size: 16px;
+      margin: 1px;
+    }
+    .conttwo {
+      height: 950px;
+      justify-content: flex-start;
+      text-align: center;
+      background-size: 100%;
+      background-position-y: 110%;
+    }
+  }
+
+  @media only screen and (max-width: 1000px) {
+    .submenu {
+      display: none !important;
+    }
+    .house {
+      flex-direction: column !important;
+      height: auto !important;
+    }
+    .twohouse {
+      flex-direction: column-reverse !important;
+    }
+    .abouthouse {
+      width: 100% !important;
+    height: auto !important;
+    }
+    .pichouse {
+      height: 300px !important;
+      background-size: contain;
+      width: 100% !important;
+    }
+  }
+ 
+  @media only screen and (max-width: 600px) {
+    .logo {
+      width: 150px;
+      margin-left: -15px;
+    }
+    .submenu {
+      display: none;
+    }
+    .banner h1 {
+      font-size: 45px;
+    }
+    .banner h3 {
+      font-size: 20px;
+      padding-top: inherit;
+    }
+    .parallax {
+      background-position: right;
+    }
+    .parallaxoverlay
+    {
+      background-position: right;
+    }
+    .photo {
+      max-width: 350px;
+      padding: inherit;
+      margin: inherit;
+    }
+
+    .cardinside {
+      text-align: center;
+      align-items: center;
+    }
+    .cardinside h1 {
+      font-size: 35px;;
+      max-width: 305px;
+      
+    }
+    .cardinside p {
+      font-size: 16px;
+    }
+    .cardinside h2 {
+      width: 355px;
+      display: flex;
+      justify-content: center;
+    }
+    .cardinside h1 {
+      margin-top: 20px;
+    }
+    .cityname {
+      font-size: 14px;
+      margin: 1px;
+    }
+    .conttwo {
+      height: 950px;
+      justify-content: flex-start;
+      text-align: center;
+      background-size: 100%;
+      background-position-y: 110%;
+    }
+   .contthree h1, .contfour h1 {
+    font-size: 40px;
+   }
+   .contthree p, .contfour p {
+    font-size: 16px;
+    max-width: 380px;
+   }
+   .contfive {
+    flex-direction: column;
+    max-height: 1500px !important;
+   }
+   .contfive iframe {
+    max-width: 500px !important; 
+   }
+   .contfive div {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+   .contfive h1 {
+    font-size: 35px;;
+   }
+   .but {
+    width: 160px !important;
+        font-size: 15px;
+        padding: inherit;
+        padding: 16px;
+   }
+   .kontakti {
+    flex-direction: column !important;
+   }
+   #socials {
+    flex-direction: row !important;
+   }
+   .footer h3 {
+    font-size: 16px;
+   }
+   .footer img {
+    display: none;
+   }
+  }
+
+
+.menutwo {
+  background-color: #1a1a1b;
+}
+.house {
+  width: 100%;
+  height: 600px;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  overflow: hidden;
+}
+.pichouse {
+  width: 40%;
+  height: 600px;
+  transition: all .5s;
+  background-size: cover;
+  background-position: center;
+}
+.abouthouse {
+  width: 60%;
+  height: 600px;
+  font-family: 'Roboto', sans-serif;
+  padding: 50px;
+  z-index: 2;
+}
+.abouthouse p {
+  padding: 20px;
+}
+.abouthouse span {
+  margin: 5px;
+  color: whitesmoke !important;
+  white-space: nowrap;
+}
+.abouthouse h2 {
+  display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      text-align: left;
+      justify-content: flex-start;
+      align-items: center;
+}
+.abouthouse a {
+  width: 200px;
+}
+.house:hover .pichouse,
+.house:focus .pichouse {
+  transform: scale(1.2);
+}
+.abouthouse h3 {
+  text-align: center;
+  margin-top: 30px;
+}
+.abouthouse #socials {
+margin-left: 150px;
+}
+.swiper-pagination-bullet-active {
+  background-color:#018864 !important; 
+}
+.swiper-pagination-bullet {
+  background-color: whitesmoke!important; 
+}
